@@ -6,10 +6,11 @@ app = Flask(__name__, static_folder='static', static_url_path='')
 
 
 def getX10CurrentProfit():
-        with open('revs.json','r',encoding='utf-8') as f:
+        with open('../proxy/revs.json','r') as f:
             #f.write(json.dumps(revs))
             c = f.read()
             print c
+            return c
 
 
 
@@ -21,7 +22,8 @@ def hello_world():
 
 @app.route('/api/x10currentprofit')
 def x10CurrentProfit():
-    getX10CurrentProfit()
+    result = getX10CurrentProfit()
+    return jsonify(result)
 
 
 
