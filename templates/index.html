@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Digital_Host Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <!-- webfonts -->
+
+    <link href="css/google.css" rel='stylesheet' type='text/css' />
+    <!-- webfonts -->
+    <!--font-Awesome-->
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <!--font-Awesome-->
+    <script type="text/javascript" src="js/number_format.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <!-- container -->
+        <!-- top-nav -->
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="images/logo.png" alt="" /></a>
+            </div>
+            <div class="nav navbar-nav navbar-right form-inline">
+                <!-- top-nav -->
+                <input type="text" id="address" name="miner-address" class="form-control address-login" placeholder="钱包地址">
+                <button id="jump-address" class="btn" type="submit"><i class="fa fa-search"></i></button>
+                <div class="clearfix"> </div>
+            </div>
+            <!-- header -->
+        </div>
+    </div>
+    <!-- banner -->
+
+    <!-- banner -->
+    <!-- welcome-note -->
+    <div class="welcome-note text-center">
+        <div class="container">
+            <p><i class="fa fb fa-rss"></i> <a href="#">本站新闻：</a></p>
+        </div>
+    </div>
+
+    <!-- palns -->
+    <div class="plans">
+        <div class="container">
+            <div class="alert alert-warning alert" style="color: rgb(146, 106, 106); margin-top: 15px; border-color: #f5d8a7">
+                当前Giant-B各算法收益(/天)：<br /> Blake256R14/Decred:
+                <span id='dcrgb'></span>BTC<br/> Blake2b/Sia:
+                <span id='blake2bgb'></span>BTC<br/> LBRY/Lbc:
+                <span id='lbrygb'></span>BTC<br/>PASCAL/Pasc:
+                <span id='pascgb'></span>BTC<br/>
+
+            </div>
+            <br><br>
+            <h2>请按照下列服务器设置您的Giant-B矿机 以便自动切换到当前盈利最高的币种</h2>
+            <!-- pricing-grids -->
+            <div class="pricing-grids">
+                <div class="col-md-3 text-center">
+                    <div class="pricing-grid">
+                        <h3>Blake256R14/Decred</h3>
+                        <small> </small>
+                        <big>当前币种</big>
+                        <label>DCR</label>
+
+                        <p><strong>矿池设置</strong><br>URL:120.78.190.81:3252<br> User: [钱包地址].[矿机名]<br> Pass: x<br>
+
+                        </p>
+                        <!-- <p><strong>设置图文</strong> <a href=''>点我</a></p> -->
+                        <p><strong>每G日收益</strong> <span id='dcr'></span>BTC</p>
+
+
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="pricing-grid">
+                        <h3>Blake2b</h3>
+                        <small> </small>
+                        <big>当前币种</big>
+                        <label>SIA</label>
+
+                        <p><strong>矿池设置</strong><br>URL:120.78.190.81:3333<br> User: [钱包地址].[矿机名]<br> Pass: x<br>
+
+                        </p>
+                        <!-- <p><strong>设置图文</strong> <a href=''>点我</a></p> -->
+                        <p><strong>每G日收益</strong> <span id='blake2b'></span>BTC</p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <div class="pricing-grid">
+                        <h3>LBRY</h3>
+                        <small> </small>
+                        <big>当前币种</big>
+                        <label>LBC</label>
+
+                        <p><strong>矿池设置</strong><br>URL:120.78.190.81:3334<br> User: [钱包地址].[矿机名]<br> Pass: x<br>
+
+                        </p>
+                        <!-- <p><strong>设置图文</strong> <a href=''>点我</a></p> -->
+                        <p><strong>每G日收益</strong> <span id='lbry'></span>BTC</p>
+
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="pricing-grid">
+                        <h3>PASCAL</h3>
+                        <small> </small>
+                        <big>当前币种</big>
+                        <label>PASC</label>
+
+                        <p><strong>矿池设置</strong><br>URL:120.78.190.81:6745<br> User: [钱包地址].[矿机名]<br> Pass: x<br>
+
+                        </p>
+                        <!-- <p><strong>设置图文</strong> <a href=''>点我</a></p> -->
+                        <p><strong>每G日收益</strong> <span id='pasc'></span>BTC</p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <div class="pricing-grid">
+                        <h3>Blake256R8</h3>
+                        <small> </small>
+                        <big>当前币种</big>
+                        <label>BLK</label>
+
+                        <p><strong>矿池设置</strong><br>URL:120.78.190.81:5743<br> User: [钱包地址].[矿机名]<br> Pass: x<br>
+
+                        </p>
+                        <!-- <p><strong>设置图文</strong> <a href=''>点我</a></p> -->
+                        <p><strong>每G日收益</strong> <span id=''></span>BTC</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- pricing-grids -->
+    </div>
+    </div>
+    <!-- palns -->
+    </div>
+    <!-- contact-info -->
+    <div class="contact-info text-center">
+        <h3>我们的优势</h3>
+
+        <p><span> </span><i class="fa fa-star"></i><span> </span></p>
+
+    </div>
+    <!-- /contact-info -->
+    <!-- bottom-grids -->
+    <div class="bottom-grids">
+        <div class="container">
+            <div class="feature_grid">
+                <div class="col-md-6 bottom-grid">
+                    <div class="feature">
+                        <i class="fa fa-shield"> </i>
+                        <h3>稳定的服务器</h3>
+                        <p>
+                            服务器已稳定不间断运行超过100天<br><br><br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 bottom-grid">
+                    <div class="feature">
+                        <i class="fa fa-cloud-upload"> </i>
+                        <h3>动态调整</span>
+                        </h3>
+                        <p>
+                            根据当前难度和算力，动态调整Giant-B机器算法，为您选择挖掘当前盈利最佳的币种，确保您的矿机始终处于最快速的回报通道
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="feature_grid1">
+                <div class="col-md-6 bottom-grid">
+                    <div class="feature">
+                        <i class="fa fa-globe"> </i>
+                        <h3>全球节点</h3>
+                        <p>
+                            超过10台服务器遍及全球，为您提供不间断的服务，服务器已经稳定运行超过100天，工程师团队都有5年以上业界经验，为您的矿机稳定运行保驾护航
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 bottom-grid">
+                    <div class="feature">
+                        <i class="fa fa-list-alt"> </i>
+                        <h3>超低费用</span>
+                        </h3>
+                        <p>
+                            最大限度地回报您的支持。
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- /bottom-grids -->
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <!-- footer-grids -->
+            <div class="footer-grids">
+                <div class="col-md-3 footer-grid">
+                    <h3>我们的矿池</h3>
+                    <ul>
+                        <li><a href="#">Giant-B 多算法矿池</a></li>
+                        <li><a href="#">X10 多算法矿池-敬请期待</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-grid">
+                    <h3>客户服务</h3>
+                    <ul>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">收益计算器</a></li>
+
+                    </ul>
+                </div>
+                <!--
+                <div class="col-md-3 footer-grid">
+                    <h3>Extras</h3>
+                    <ul>
+                        <li><a href="#">Brands</a></li>
+                        <li><a href="#">Specials</a></li>
+                        <li><a href="#">Vouchers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-grid">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="#">Wish List</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fa fb fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa tw fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa tw fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            -->
+                <div class="clearfix"> </div>
+            </div>
+            <div class="copy">
+                <p>Copyright &copy; 2016. 多算法矿池 All rights reserved.</p>
+            </div>
+            <!-- footer-grids -->
+        </div>
+    </div>
+    <!-- footer -->
+    <!-- container -->
+    <script>
+        $(document).ready(function() {
+
+            $('#jump-address').on('click', function() {
+                //window.location.href='';
+                var addr = $('#address').val();
+
+                window.location.href = '/' + addr;
+            });
+
+
+            var url_profit = "/api/gbprofitperg";
+
+            // Worker process to update revenue info
+            (function worker1() {
+                $.ajax({
+                    url: url_profit,
+                    dataType: 'json',
+                    cache: false,
+                    contentType: 'application/json; charset=utf-8',
+                    type: 'GET',
+                    success: function(data) {
+                        refreshRevData(data);
+                    },
+                    complete: function() {
+                        setTimeout(worker1, 600000)
+                    }
+                });
+            })();
+
+            function refreshRevData(data) {
+                //balance = data.getanonbalance.data
+                $('#dcr').html(number_format(data.dcr, 8));
+                $('#dcrgb').html(number_format(data.dcr * 160, 5));
+                $('#lbry').html(number_format(data.lbry, 8));
+                $('#lbrygb').html(number_format(data.lbry * 40, 5));
+                $('#blake2b').html(number_format(data.blake2b, 8));
+                $('#blake2bgb').html(number_format(data.blake2b * 80, 5));
+                $('#pasc').html(number_format(data.pascal, 8));
+                $('#pascgb').html(number_format(data.pascal * 40, 5));
+            }
+        });
+    </script>
+</body>
+
+</html>
